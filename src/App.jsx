@@ -1,9 +1,9 @@
 import React from 'react'
 import useLocalStorage from'use-local-storage';
-import Header from './Header';
-import List from './List';
+import Header from './components/Header';
+import List from './components/List';
 
-import './huita.css'
+import './components/dark.css'
 function App() {
   const [theme,setTheme] = useLocalStorage('theme'?'dark':'light')
   const change=()=>{
